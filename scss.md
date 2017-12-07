@@ -76,34 +76,7 @@ true
   }
 }
 ```
-* A class can not be called more than once in the document
-```scss
-false
-@media screen and (max-width: 640px) {
 
-  .main-bloc {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 640px) {
-
-  .main-bloc {
-    width: 100%;
-  }
-}
-
-true
-.main-bloc {
-  @media screen and (max-width: 640px) {
-    width: 50%;
-  }
-  
-  @media screen and (min-width: 640px) {
-    width: 100%;
-  }
-}
-```
 * Do not use the all keyword during transitions and other animation effects
 ```scss
 false
