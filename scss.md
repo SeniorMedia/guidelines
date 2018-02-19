@@ -4,18 +4,35 @@ A quick reminder on how to share your project with Seniormedia team when working
 
 * Line break after calling an html element (tag, class ...)
 ```scss
-false
+true
 .parent-bloc {
   .child-bloc {
     font-size: 9px;
   }
 }
 
-true
+.parent-bloc {
+  color: red;
+  
+  .child-bloc {
+    background-color: blue;
+  }
+}
+
+_________________________
+
+false
 .parent-bloc {
 
   .child-bloc {
     font-size: 9px;
+  }
+}
+
+.parent-bloc {
+  color: red;
+  .child-bloc {
+    background-color: blue;
   }
 }
 ```
@@ -53,11 +70,8 @@ div {
 ```scss
 false
 .parent-bloc {
-
   .child-bloc {
-    
     .child-bloc {
-      
       &:before {
         width: 30px;
       }
@@ -67,9 +81,7 @@ false
 
 true
 .parent-bloc {
-
   .child-bloc {
-    
     &:before {
       width: 30px;
     }
@@ -81,7 +93,6 @@ true
 true
 @media screen and (max-width: 640px) {
 .container {
-
     .main-bloc {
       width: 50%;
     }
@@ -90,7 +101,6 @@ true
 
 @media screen and (min-width: 640px) {
 container {
-
     .main-bloc {
       width: 100%;
     }
@@ -99,7 +109,6 @@ container {
 
 false
 .container {
-
   .main-bloc {
     @media screen and (max-width: 640px) {
       width: 50%;
