@@ -49,11 +49,11 @@ function foo($var) {
 }
 ```
 
-* Put spaces in brackets when declaring an array, except where the array is empty. Do not put spaces in brackets when accessing array elements.
+* Do not put spaces in brackets.
 ```php
 true
 
-$a = [ 'foo', 'bar' ];
+$a = ['foo', 'bar'];
 $c = $a[0];
 $x = [];
 
@@ -61,7 +61,7 @@ _________________________
 
 false
 
-$a = ['foo', 'bar'];
+$a = [ 'foo', 'bar' ];
 $c = a[ 0 ];
 $x = [ ];
 
